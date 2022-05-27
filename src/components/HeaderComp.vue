@@ -1,19 +1,19 @@
 <template>
-  <header class="d-flex justify-content-between align-items-center px-5 debug h100">
+  <header class="d-flex justify-content-between align-items-center px-5 py-4">
     
     <!-- Logo -->
-    <div class="logo">Logo</div>
+    <div class="logo">
+      <img class="w-100" src="../assets/images/construction_logo.png" alt="">
+    </div>
 
     <!-- Nav bar -->
     <nav class="d-flex">
-      <ul class="d-flex">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+      <ul class="d-flex mb-0">
+        <li v-for="(menuItem, index) in MenuItems" :key="`menuItem-${index}`" class="d-flex align-items-center">
+          <a :class="{'active' : menuItem.isActive}" :href="menuItem.href">{{menuItem.name}}</a>
+        </li>
       </ul>
-      bottone
+      <button type="button" class="btn btn-warning">Warning</button>
     </nav>
     <!-- /Nav bar -->
 
@@ -21,11 +21,41 @@
 </template>
 
 <script>
+import MenuItems from '../assets/data/header-nav'
+
 export default {
-  name: 'HeaderComp'
+  name: 'HeaderComp',
+
+  data(){
+    return{
+      MenuItems
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/vars';
 
+header{
+  .logo{
+    width: 150px;
+  }
+
+  li{
+    padding: 0 15px;
+  }
+
+  a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: .8rem;
+    display: inline-block;
+    &:hover,
+    &.active{
+      color: $primary-color;
+    }
+  }
+}
 </style>
