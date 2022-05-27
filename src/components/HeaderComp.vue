@@ -3,7 +3,7 @@
     
     <!-- Logo -->
     <div class="logo">
-      <img class="w-100" src="../assets/images/construction_logo.png" alt="">
+      <img class="w-100" src="../assets/images/construction_logo.png" alt="Logo">
     </div>
 
     <!-- Nav bar -->
@@ -13,7 +13,7 @@
           <a :class="{'active' : menuItem.isActive}" :href="menuItem.href">{{menuItem.name}}</a>
         </li>
       </ul>
-      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-warning gb-btn">get quote</button>
     </nav>
     <!-- /Nav bar -->
 
@@ -47,7 +47,7 @@ header{
   }
 
   a{
-    color: black;
+    color: #858585;
     text-transform: uppercase;
     font-weight: 200;
     font-size: .8rem;
@@ -55,6 +55,21 @@ header{
     &:hover,
     &.active{
       color: $primary-color;
+    }
+  }
+
+  .gb-btn{
+    background-color: $primary-color;
+    border-radius: 0%;
+    padding: 5px 20px;
+    color: #858585;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    &:hover{
+      background-color: $secondary-color;
+      color: white;
+      border: 1px solid $secondary-color;
     }
   }
 }
