@@ -15,7 +15,7 @@
     <!-- /Box -->
 
     <!-- Content Jumbo -->
-    <div class="content-jumbo text-center debug">
+    <div class="content-jumbo gb-container text-center debug">
       <h2>TESTO</h2>
       <h3>TESTO</h3>
       BOTTONE BOTTONE
