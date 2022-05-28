@@ -13,7 +13,7 @@
           <a :class="{'active' : menuItem.isActive}" :href="menuItem.href">{{menuItem.name}}</a>
         </li>
       </ul>
-      <button type="button" class="btn btn-warning gb-btn">get quote</button>
+      <button type="button" class="btn btn-warning gb-btn-primary">get quote</button>
     </nav>
     <!-- /Nav bar -->
 
@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/vars';
+@import '../assets/style/mixins';
 
 header{
   .logo{
@@ -58,19 +59,9 @@ header{
     }
   }
 
-  .gb-btn{
-    background-color: $primary-color;
-    border-radius: 0%;
-    padding: 5px 20px;
-    color: #858585;
+  .gb-btn-primary{
     font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: 200;
-    &:hover{
-      background-color: $secondary-color;
-      color: white;
-      border: 1px solid $secondary-color;
-    }
+    @include primaryButton();
   }
 }
 </style>

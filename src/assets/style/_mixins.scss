@@ -1,0 +1,27 @@
+@mixin primaryButton() {
+  background-color: $primary-color;
+  border-radius: 0%;
+  padding: 5px 20px;
+  color: #858585;
+  text-transform: uppercase;
+  font-weight: 200;
+  &:hover{
+    background-color: $secondary-color;
+    color: white;
+    border: 1px solid $secondary-color;
+  }
+}
+
+@mixin secondaryButton() {
+  background-color: $secondary-color;
+  border-radius: 0%;
+  padding: 5px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  &:hover{
+    background-color: $primary-color;
+    color: #858585;
+    border: 1px solid $primary-color;
+  }
+}
