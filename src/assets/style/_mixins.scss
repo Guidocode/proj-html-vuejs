@@ -2,7 +2,7 @@
   background-color: $primary-color;
   border-radius: 0%;
   padding: 5px 20px;
-  color: #858585;
+  color: $text-grey;
   text-transform: uppercase;
   font-weight: 200;
   &:hover{
@@ -21,7 +21,7 @@
   font-weight: 200;
   &:hover{
     background-color: $primary-color;
-    color: #858585;
+    color: $text-grey;
     border: 1px solid $primary-color;
   }
 }

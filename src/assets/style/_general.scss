@@ -1,5 +1,11 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+@import './vars';
+
+body{
+  color: $secondary-color;
+}
+
 ul{
   list-style: none;
 }
