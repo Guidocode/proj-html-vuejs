@@ -3,10 +3,29 @@
   width: 50%;
   margin: 0 auto;
 }
+.gb-container-big{
+  width: 70%;
+  margin: 0 auto;
+}
 
 
+.false-hr{
+  max-width: 30%;
+  height: 1px;
+  background-color: $primary-color;
+  margin: 0 auto;
+}
+.false-hr-full{
+  width: 100%;
+  height: 1px;
+  background-color: $tertiary-color;
+  margin: 0 auto;
+}
 
-
+.p-small{
+  font-size: .7rem;
+  color: $text-grey;;
+}
 
 
 

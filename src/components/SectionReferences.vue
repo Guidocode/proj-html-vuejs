@@ -1,7 +1,7 @@
 <template>
   <Section class="h500 d-flex align-items-center">
 
-    <div class="gb-container">
+    <div class="gb-container-big">
       <div class="container">
         <div class="row row-cols-4">
 
@@ -9,8 +9,8 @@
            class="col">
             <div class="gb-card text-center">
               <i :class="cardItem.icon"></i>
-              <div class="number">{{cardItem.number}}</div>
-              <p class="title text-light fw-light">{{cardItem.title}}</p>
+              <div class="number fw-normal">{{cardItem.number}}</div>
+              <p class="title text-light">{{cardItem.title}}</p>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ section{
   }
 
   .title{
-    font-size: .7rem;
+    font-size: .8rem;
   }
 }
 </style>

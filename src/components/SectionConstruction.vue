@@ -84,7 +84,6 @@ export default {
 @import '../assets/style/mixins';
 
 section{
-  font-weight: 200;
   color: $secondary-color;
 
   .top{
@@ -112,17 +111,7 @@ section{
       height: 200px;
     }
 
-    .false-hr{
-      max-width: 30%;
-      height: 1px;
-      background-color: $primary-color;
-      margin: 0 auto;
-    }
-
-    .p-small{
-      font-size: .7rem;
-      color: $text-grey;;
-    }
+  
 
     // Flip card
     .flip-card {
