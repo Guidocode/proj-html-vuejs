@@ -21,6 +21,11 @@
   background-color: $tertiary-color;
   margin: 0 auto;
 }
+.false-hr-small{
+  max-width: 20%;
+  background-color: 1px solid $secondary-color;
+  margin: 0 auto;
+}
 
 .p-small{
   font-size: .7rem;
