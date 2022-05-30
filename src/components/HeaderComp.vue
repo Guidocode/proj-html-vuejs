@@ -39,6 +39,14 @@ export default {
 @import '../assets/style/mixins';
 
 header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(128, 126, 126, 0.875);
+
   .logo{
     width: 150px;
   }
@@ -57,6 +65,9 @@ header{
     &.active{
       color: $primary-color;
     }
+    // &:after{
+      
+    // }
   }
 
   .gb-btn-primary{

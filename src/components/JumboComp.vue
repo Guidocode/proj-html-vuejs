@@ -37,9 +37,9 @@ export default {
 @import '../assets/style/mixins';
 
 .jumbo{
-  position: relative;
   background-image: url('../assets/images/home-slider-62528242.jpg');
   background-size: cover;
+  margin-top: 100px;
 
   p{
     color: $primary-color;
@@ -57,8 +57,8 @@ export default {
   }
 
   .box{
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 120px;
     right: 10px;
 
     .demos,
@@ -68,6 +68,7 @@ export default {
     border-radius: 5px;
     color: black;
     cursor: pointer;
+    box-shadow: 0 0px 10px rgb(132, 131, 131);
     }
 
     i, .price{
