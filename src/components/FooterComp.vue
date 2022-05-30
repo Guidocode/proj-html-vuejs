@@ -127,15 +127,14 @@
       </div>
 
       <div class="social d-flex justify-content-between">
-        <div><i class="fa-brands fa-facebook-f"></i></div>
-        <div><i class="fa-brands fa-twitter"></i></div>
-        <div><i class="fa-brands fa-youtube"></i></div>
-        <div><i class="fa-brands fa-instagram"></i></div>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
 
-      <div class="chevron-up d-flex justify-content-center align-items-center">
-        <a href="#"><i class="fa-solid fa-chevron-up text-light"></i></a>
-      </div>
+      <a class="chevron-up d-flex justify-content-center align-items-center" href="#"><i class="fa-solid fa-chevron-up text-light"></i></a>
+   
 
     </div>
     <!-- /Footer bottom -->
@@ -188,6 +187,7 @@ footer{
         margin-bottom: -12px;
         img{
           width: 15px;
+          cursor: pointer;
         }
       }
 
@@ -200,6 +200,7 @@ footer{
       }
       img{
         border-radius: 5px;
+        cursor: pointer;
       }
 
       .right-bottom{
@@ -207,6 +208,7 @@ footer{
           img{
             width: 15px;
             margin-right: 10px;
+            cursor: pointer;
           }
         }
         .bottom-right{
@@ -238,7 +240,7 @@ footer{
     width: 40px;
     height: 30px;
     background-color: #333232a8;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
   }
   
 }

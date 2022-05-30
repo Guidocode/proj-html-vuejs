@@ -32,6 +32,14 @@ export default {
   transition: 1s;
   &:hover .icon{
     background-color: $primary-color !important;
+    animation: pulse 1.5s infinite;
+    animation-timing-function: ease-in-out;  
+
+    @keyframes pulse {
+      0% { transform: scale(1) };
+      50% { transform: scale(1.2)};
+      100% { transform: scale(1); }
+    }
   }
   &:hover span{
     color: $primary-color;
@@ -52,3 +60,9 @@ export default {
   }
 }
 </style>
+
+
+.pulse a:hover{ 
+   
+}
+
