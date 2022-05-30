@@ -16,7 +16,7 @@
       <div class="gb-container text-center">
         <p class="text-capitalize fs-4">specialists in modern construction</p>
         <div class="false-hr"></div>
-        <p class="p-small lh-lg mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed sequi, dolor, nostrum aliquam illo repellendus enim ea at commodi, veniam doloribus omnis molestias!</p>
+        <p class="p-small lh-lg mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed sequi, dolor, nostrum aliquam illo repellendus enim ea at commodi, veniam doloribus omnis molestias!</p>
       </div>
 
       <div class="container">
@@ -109,6 +109,7 @@ section{
     /* Da sistemare (problema con le altezze) */
     .container{
       height: 200px;
+      width: 85%;
     }
 
   

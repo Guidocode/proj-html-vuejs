@@ -5,7 +5,7 @@
     <div class="top gb-container text-center">
       <p class="text-capitalize fs-4">Explore Recent Work</p>
       <div class="false-hr"></div>
-      <p class="p-small lh-lg mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quia maiores, corrupti velit accusamus, autem pariatur repudiandae mollitia ducimus ullam ipsam, in animi natus ratione.</p>
+      <p class="p-small lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quia maiores, corrupti velit accusamus, autem pariatur repudiandae mollitia ducimus ullam ipsam, in animi natus ratione.</p>
     </div>
     <!-- /Content Top -->
 
