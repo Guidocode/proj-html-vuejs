@@ -18,12 +18,10 @@
       <div class="container-fluid">
         <div class="row row-cols-3">
 
-          <div v-for="(imgItem, index) in images" :key="`imgItem-${index}`" 
-           class="col">
-            <div class="gb-card">
-              <img class="img-fluid" :src="require(`../assets/images/${imgItem.image}`)" :alt="imgItem.alt">
-            </div>
-          </div>
+          <RecentWorkCard 
+          v-for="(imgItem, index) in images" :key="`imgItem-${index}`" 
+          :image="imgItem"
+          />
 
         </div>
       </div>
@@ -53,15 +51,16 @@
 
 <script>
 import images from '../assets/data/section-recent-work-img'
+import RecentWorkCard from './section-cards-comps/RecentWorkCard.vue'
 
 export default {
-  name: 'SectionRecentWork',
-
-  data(){
-    return{
-      images
-    }
-  }
+    name: "SectionRecentWork",
+    data() {
+      return {
+        images
+      };
+    },
+    components: { RecentWorkCard }
 }
 </script>
 

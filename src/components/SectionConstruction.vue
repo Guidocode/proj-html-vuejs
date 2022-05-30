@@ -27,11 +27,6 @@
           :card="cardItem"
           />
 
-          <div  
-           class="col">
-
-          </div>
-
         </div>
       </div>
 

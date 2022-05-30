@@ -5,14 +5,10 @@
       <div class="container">
         <div class="row row-cols-4">
 
-          <div v-for="(cardItem, index) in cards" :key="`cardItem-${index}`" 
-           class="col">
-            <div class="gb-card text-center">
-              <i :class="cardItem.icon"></i>
-              <div class="number fw-normal">{{cardItem.number}}</div>
-              <p class="title text-light">{{cardItem.title}}</p>
-            </div>
-          </div>
+          <ReferencesCard 
+          v-for="(cardItem, index) in cards" :key="`cardItem-${index}`" 
+          :card="cardItem"
+          />
 
         </div>
       </div>
@@ -23,33 +19,22 @@
 
 <script>
 import cards from '../assets/data/section-references'
+import ReferencesCard from './section-cards-comps/ReferencesCard.vue'
 
 export default {
-  name: 'SectionReferences',
-
-  data(){
-    return{
-      cards
-    }
-  }
+    name: "SectionReferences",
+    data() {
+      return {
+        cards
+      };
+    },
+    components: { ReferencesCard }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/vars';
-
 section{
   background-image: url('../assets/images/home-244125289.jpg');
   background-size: cover;
-
-  i, 
-  .number{
-    color: $primary-color;
-    font-size: 50px;
-  }
-
-  .title{
-    font-size: .8rem;
-  }
 }
 </style>
