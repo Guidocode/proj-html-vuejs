@@ -22,9 +22,10 @@
   margin: 0 auto;
 }
 .false-hr-small{
-  max-width: 20%;
-  background-color: 1px solid $secondary-color;
-  margin: 0 auto;
+  height: 1px;
+  max-width: 10%;
+  background-color: $secondary-color;
+  margin: 10px auto;
 }
 
 .p-small{
