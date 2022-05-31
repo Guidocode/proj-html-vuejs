@@ -19,8 +19,8 @@
         <div class="row row-cols-3">
 
           <RecentWorkCard 
-          v-for="(imgItem, index) in images" :key="`imgItem-${index}`" 
-          :image="imgItem"
+          v-for="(imgItem, index) in cards" :key="`imgItem-${index}`" 
+          :card="imgItem"
           />
 
         </div>
@@ -50,14 +50,14 @@
 </template>
 
 <script>
-import images from '../assets/data/section-recent-work-img'
+import cards from '../assets/data/section-recent-work-img'
 import RecentWorkCard from './section-cards-comps/RecentWorkCard.vue'
 
 export default {
     name: "SectionRecentWork",
     data() {
       return {
-        images
+        cards
       };
     },
     components: { RecentWorkCard }
